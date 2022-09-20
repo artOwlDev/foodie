@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Inter&family=Montserrat&family=Poppins:wght@400;700&display=swap');
+$bg-color: rgb(18, 17, 17);
+
+.navbar-bg {
+    height: 7vh;
+    background: rgb(18, 17, 17);
+    display: flex;
+    justify-content: center;
+
+
+
+    .navbar {
+        display: flex;
+        width: 80%;
+        height: 100%;
+        margin: center;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .links {
+            display: flex;
+            align-items: center;
+
+            h1 {
+                cursor: pointer;
+                color: #9fa5df;
+                margin-right: 4rem;
+                font-family: 'Combo', cursive;
+                text-decoration: underline;
+            }
+
+            span {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                margin: 0 2rem;
+                transition: all 0.4s ease;
+                font-family: 'Montserrat', sans-serif;
+                position: relative;
+                font-size: .8rem;
+                text-decoration: none;
+    
+                &:hover {
+                    color: #747fe4;
+                }
+            }
+        }
+
+        .contact {
+            button {
+                cursor: pointer;
+                background-color: #7881d4;
+                border: none;
+                padding: 0.7rem;
+                border-radius: 20px;
+                color: whitesmoke;
+                font-family: 'Poppins', sans-serif;
+                transition: all 0.5s ease;
+
+                &:hover{
+                    filter: brightness(115%);
+                }
+
+            }
+
+        }
+    }
+}
+
+
+

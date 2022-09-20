@@ -1,0 +1,54 @@
+.sidebar{
+    position: absolute;
+    left: 3rem;
+    bottom: 0;
+    position: fixed;
+    
+
+    .icons{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .icon{
+            transition: all 0.6s ease;
+            cursor: pointer;
+            color: rgb(24, 23, 23);
+
+            &.ig:hover{
+                color: #bc2a8d;
+                
+            }
+
+            &.fb:hover{
+                color: #4267B2;
+            }
+
+            &.twt:hover{
+                color: #1DA1F2
+            }
+
+            &.lin:hover{
+                color: #0b66c3;
+            }
+
+            &.git:hover{
+                color: black;
+            }
+
+
+
+            &:hover{
+                transform: translateY(-8px);
+            }
+        }
+
+        .vl{
+            border-left: 2px solid rgb(24, 23, 23);
+            height: 5rem;
+            margin-left: .8rem;
+        }
+    }
+
+}
+
