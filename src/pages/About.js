@@ -15,6 +15,7 @@ const About = () => {
                 <h1>Welcome!</h1>
                 <p>Fooodie is a website aiming to provide you with all the recipes to your favorite dishes.</p>
             </Text>
+
         </div>
     )
 }

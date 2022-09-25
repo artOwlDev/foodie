@@ -23,7 +23,6 @@ const Home = () => {
 }
 
 const Container = styled.div`
-  overflow: hidden;
   height: 100vh;
   background: rgba(238,239,248,255);
 `;

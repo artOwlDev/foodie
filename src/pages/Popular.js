@@ -13,6 +13,7 @@ const Popular = () => {
             <Navbar/>
             <Sidebar/>
             <PopularDishes/>
+
         </div>
 
     )

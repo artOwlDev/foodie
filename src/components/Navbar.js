@@ -5,14 +5,12 @@ import "./navbar.scss"
 
 const Navbar = () => {
 
-
-
     return (
         <div className='navbar-bg'>
             <div className="navbar">
                 <div className="links">
                     <Link to="/home" style={{ textDecoration: 'none' }}>
-                        <h1>Foodie</h1>
+                        <h1>Fooodie</h1>
                     </Link>
                     <Link to="/home" style={{ textDecoration: 'none' }}>
                         <span className='link'>Home</span>
@@ -29,7 +27,7 @@ const Navbar = () => {
                     
                 </div>
                 <div className="contact">
-                    <button>Contact us</button>
+                    <a href = "mailto: artunipuni@gmail.com"><button>Contact us</button></a>
                 </div>
             </div>
             

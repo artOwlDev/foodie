@@ -50,14 +50,17 @@ $bg-color: rgb(18, 17, 17);
 
         .contact {
             button {
+                
+                border: 1px solid red;
                 cursor: pointer;
                 background-color: #7881d4;
                 border: none;
-                padding: 0.7rem;
+                padding: 1.4vh;
                 border-radius: 20px;
                 color: whitesmoke;
                 font-family: 'Poppins', sans-serif;
                 transition: all 0.5s ease;
+                text-transform: wrap;
 
                 &:hover{
                     filter: brightness(115%);
@@ -67,6 +70,49 @@ $bg-color: rgb(18, 17, 17);
 
         }
     }
+}
+
+@media screen and (max-width: 800px){
+
+    .navbar-bg{
+        height: 14vh;
+        .navbar{
+            position: relative;
+            .links{
+                margin-top: 4rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                border-top: 1px solid white;
+                padding: 1rem;
+
+                
+        
+                h1{
+                    position: absolute;
+                    top: 1rem;
+                    left: 40%;
+                    text-decoration: none;
+                    
+                }
+        
+                span{
+                    display: flex;
+                    
+                }
+        
+            }
+        
+            .contact{
+                display: none;
+            }
+        }
+
+    }
+
+    
 }
 
 

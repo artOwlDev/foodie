@@ -19,6 +19,7 @@ const VeggieDishes = () => {
         const data = await api.json();
         console.log(data);
         setVeggie(data.recipes)
+        console.log(process.env.REACT_APP_API_KEY)
 
     }
 

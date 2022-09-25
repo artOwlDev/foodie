@@ -90,3 +90,22 @@ $h3-color: #9492b0;
     }
 }
 
+@media screen and (max-width: 800px) {
+
+    .home-search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        img{
+            display: none;         
+        }
+
+        .text-area{
+            margin: 0 5rem;
+        }
+    }
+    
+}
+

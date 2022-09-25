@@ -51,24 +51,29 @@ const SearchPage = (searched) => {
 
 const Searches = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Combo&family=Inter&family=Montserrat&family=Poppins:wght@400;700&display=swap');
-    width: 70%;
+    width: 80%;
+    height: 100%;
+    margin:auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 4rem auto;
-    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));    
     
 `;
 
 
 const Item = styled.div`
+    animation: opacityAnimation 0.5s;
+    cursor: pointer;
+    min-height: 16rem;
+    width: 24rem;
+    padding: 1rem;
     position: relative;
-    margin: .8rem;
             
     img{
-        cursor: pointer;
+        display: block;
         -webkit-box-shadow: 0px 0px 4px -1px #000000; 
         box-shadow: 0px 0px 4px -1px #000000;
-        height: 16rem;
+        height: 15rem;
         object-fit:fill;
         border-radius: 1.5rem;
         filter: brightness(75%);
@@ -76,17 +81,18 @@ const Item = styled.div`
 
         &:hover{
             filter: brightness(100%);
+            //this is a test
         }
-
     }
 
     p{
         z-index: 3;
         font-size: 0.8rem;
-        width: 100%;
+        padding: 0.3rem;
+        width: 84%;
         position: absolute;
+        bottom: 1rem;
         display: flex;
-        bottom: 0;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -94,9 +100,8 @@ const Item = styled.div`
         border-bottom-left-radius: 1.5rem;
         border-bottom-right-radius: 1.5rem;
         color: white;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,0.25);
         height: 5vh;
-
 
     }
 `;
